@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&display=swap");
+
+* {
+  font-family: "Grandstander", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --yellow: #f5e050;
+  --green: rgb(115, 248, 53);
+}
+body {
+  background-image: url("yoda.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.heading {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem 0;
+}
+h1 {
+  padding-left: 30px;
+  text-align: left;
+  color: #a0dd55;
+}
+.container {
+  width: 40%;
+  margin: 25vh 20vh 0 5vh;
+}
+#text-input {
+  display: block;
+  font-size: large;
+  height: 8rem;
+  width: 80%;
+  border: 1px solid black;
+  padding: 1rem;
+  resize: none;
+}
+p {
+  color: white;
+}
+#output {
+  padding: 16px 16px 16px 5px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 2px solid black;
+  width: 80%;
+  height: 8rem;
+  margin-top: 5px;
+}
+#translate-btn {
+  padding: 1rem;
+  background-color: var(--yellow);
+  border: none;
+  margin: 1rem auto;
+  font-size: 15px;
+  cursor: pointer;
+}
+#translate-btn:hover {
+  background: var(--green);
+  border: 1px solid black;
+}
+.center {
+  width: 40%;
+  padding: 1rem;
+  margin: auto;
+}
+@media /*(min-width: 320px) and*/ (max-width: 480px) /* Mobile */ {
+  body {
+    width: 100%;
+    height: auto;
+  }
+
+  .heading {
+    font-size: small;
+    padding: 1rem;
+  }
+
+  .container,
+  .center {
+    /* margin: 49vh auto; */
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  #input-area,
+  #output {
+    height: 100px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .container p {
+    margin: auto;
+  }
+
+  #translate-btn {
+    display: block;
+    margin: 1rem auto;
+  }
+}
+
+@media (min-width: 539px) and (max-width: 1024px) /* Tablet */ {
+  .container,
+  .center {
+    /* margin: 49vh auto; */
+    width: 80%;
+    padding: 1rem;
+  }
+}
