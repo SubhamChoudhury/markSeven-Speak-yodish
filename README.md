@@ -7,3 +7,6 @@ A fun translation site that converts English text into the language of Yoda i.e.
 - CSS
 - Vanilla JavaScript
 - [funtranslations API](https://funtranslations.com/)
+
+## Live Link :
+Click Here : [Speak Yodish](https://yodish-talks.netlify.app/)
